@@ -1,8 +1,10 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.FileSystemGlobbing.Internal;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,8 +22,19 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapAreaControllerRoute(
+            name: "area",
+            areaName:"Admin",
+           pattern: "admin/{controller=Home}/{action=Index}/{id?}"
+        );
+
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+
+});
+
 
 app.Run();
