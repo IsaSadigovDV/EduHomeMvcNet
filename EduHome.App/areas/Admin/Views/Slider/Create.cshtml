@@ -1,4 +1,4 @@
-﻿@*@model Slider
+﻿@model Slider
 <div class="container">
     <form method="post" enctype="multipart/form-data">
         <div class="form-group">
@@ -7,9 +7,9 @@
             <span class="text text-danger" asp-validation-for="Title"></span>
         </div>
         <div class="form-group">
-            <label asp-for="Description"></label>
-            <input type="text" class="form-control" asp-for="Description">
-            <span class="text text-danger" asp-validation-for="Description"></span>
+            <label asp-for="Text"></label>
+            <input type="text" class="form-control" asp-for="Text">
+            <span class="text text-danger" asp-validation-for="Text"></span>
         </div>
         <div class="form-group">
             <label asp-for="FormFile"></label>
@@ -19,4 +19,4 @@
         @Html.AntiForgeryToken()
         <button type="submit">Create</button>
     </form>
-</div>*@
+</div>
