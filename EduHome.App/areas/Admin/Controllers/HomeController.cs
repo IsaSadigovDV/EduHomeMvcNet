@@ -9,5 +9,6 @@ namespace EduHome.App.areas.Admin.Controllers
         {
             return View();
         }
+
     }
 }

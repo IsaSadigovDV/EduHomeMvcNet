@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EduHome.Core.Entities
 {
-    public class Courses:BaseModel
+    public class Category:BaseModel
     {
-        public string Name { get; set; }
+        public string Name { get; set; }    
+
     }
 }
