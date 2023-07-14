@@ -11,13 +11,13 @@
         </thead>
         <tbody>
 
-           @foreach (var item in Model)
+            @foreach (var item in Model)
             {
                 <tr>
                     <th scope="row">@item.Id</th>
                     <th>@item.Name</th>
-                    <td><a asp-controller="category" asp-action="update" asp-route-id=""><i class="fas fa-edit text text-primary"></i></a></td>
-                    <td><a onclick="if (!confirm('Delete selected item?')){return false;}" asp-controller="category" asp-action="Delete" asp-route-id="" class=" delete-item"><i class="fas fa-trash text text-danger"></i></a></td>
+                    <td><a asp-controller="category" asp-action="update" asp-route-id="@item.Id"><i class="fas fa-edit text text-primary"></i></a></td>
+                    <td><a onclick="if (!confirm('Delete selected item?')){return false;}" asp-controller="category" asp-action="Delete" asp-route-id="@item.Id" class=" delete-item"><i class="fas fa-trash text text-danger"></i></a></td>
                 </tr>
             }
 

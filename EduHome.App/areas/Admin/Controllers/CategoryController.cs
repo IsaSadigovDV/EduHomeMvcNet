@@ -38,5 +38,37 @@ namespace EduHome.App.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("index", "category");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            Category? category = await _context.Categories
+                .Where(x => !x.IsDeleted && x.Id == id)
+                                 .FirstOrDefaultAsync();
+            if (category == null)
+                return NotFound();
+
+            return View(category);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int id ,Category postcategory)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
+            Category? category = await _context.Categories
+             .Where(x => !x.IsDeleted && x.Id == id)
+                              .FirstOrDefaultAsync();
+            if (category == null)
+                return NotFound();
+
+            category.Name = postcategory.Name;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("index", "category");
+        }
     }
 }
