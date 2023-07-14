@@ -1,10 +1,16 @@
+using EduHome.App.Context;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileSystemGlobbing.Internal;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<EduHomeDbContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

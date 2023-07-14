@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fkujauGDm03q2Xh3RFmDi1p3jv7HpkuLHmGroz5WVuo=",
+  "Hash": "MkFBcaZXdPXdinJLLGaMpfIlpZYI7rf1oNd3czqFBuA=",
   "Source": "EduHome.App",
   "BasePath": "_content/EduHome.App",
   "Mode": "Default",
@@ -1054,23 +1054,6 @@
       "OriginalItemSpec": "wwwroot\\admin\\assets\\images\\favicon.png"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\images\\logo.svg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "admin/assets/images/logo.svg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\admin\\assets\\images\\logo.svg"
-    },
-    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\images\\logo-mini.svg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -1086,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\assets\\images\\logo-mini.svg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\images\\logo.svg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "admin/assets/images/logo.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\images\\logo.svg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\js\\.DS_Store",
@@ -1462,23 +1462,6 @@
       "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\lock-screen.html"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\samples\\login.html",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "admin/assets/pages/samples/login.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\login.html"
-    },
-    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\samples\\login-2.html",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -1496,12 +1479,12 @@
       "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\login-2.html"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\samples\\register.html",
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\samples\\login.html",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
       "BasePath": "_content/EduHome.App",
-      "RelativePath": "admin/assets/pages/samples/register.html",
+      "RelativePath": "admin/assets/pages/samples/login.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1510,7 +1493,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\register.html"
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\login.html"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\samples\\register-2.html",
@@ -1528,6 +1511,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\register-2.html"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\samples\\register.html",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "admin/assets/pages/samples/register.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\pages\\samples\\register.html"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\pages\\tables\\.DS_Store",
@@ -1683,23 +1683,6 @@
       "OriginalItemSpec": "wwwroot\\admin\\assets\\vendors\\chart.js\\Chart.min.js"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\vendors\\datatables.net\\jquery.dataTables.js",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "admin/assets/vendors/datatables.net/jquery.dataTables.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\admin\\assets\\vendors\\datatables.net\\jquery.dataTables.js"
-    },
-    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.css",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -1732,6 +1715,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\assets\\vendors\\datatables.net-bs4\\dataTables.bootstrap4.js"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\vendors\\datatables.net\\jquery.dataTables.js",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "admin/assets/vendors/datatables.net/jquery.dataTables.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\assets\\vendors\\datatables.net\\jquery.dataTables.js"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\admin\\assets\\vendors\\mdi\\css\\materialdesignicons.min.css",
@@ -2516,6 +2516,40 @@
       "OriginalItemSpec": "wwwroot\\img\\banner\\banner.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\blog\\blog-detail.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/blog/blog-detail.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\blog\\blog-detail.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\blog\\blog-img.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/blog/blog-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\blog\\blog-img.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\blog\\blog1.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -2669,12 +2703,12 @@
       "OriginalItemSpec": "wwwroot\\img\\blog\\blog9.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\blog\\blog-detail.jpg",
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\choose\\choose-bd.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
       "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/blog/blog-detail.jpg",
+      "RelativePath": "img/choose/choose-bd.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2683,24 +2717,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\blog\\blog-detail.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\blog\\blog-img.jpg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/blog/blog-img.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\blog\\blog-img.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\choose\\choose-bd.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\choose\\choose.png",
@@ -2718,23 +2735,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\choose\\choose.png"
-    },
-    {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\choose\\choose-bd.jpg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/choose/choose-bd.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\choose\\choose-bd.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\contact\\contact1.png",
@@ -2786,6 +2786,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\contact\\contact3.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\course\\course-bg.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/course/course-bg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\course\\course-bg.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\course\\course1.jpg",
@@ -2941,23 +2958,6 @@
       "OriginalItemSpec": "wwwroot\\img\\course\\course9.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\course\\course-bg.jpg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/course/course-bg.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\course\\course-bg.jpg"
-    },
-    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\course\\courses-details.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -2973,6 +2973,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\course\\courses-details.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\event\\event-details.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/event/event-details.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\event\\event-details.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\event\\event1.jpg",
@@ -3177,23 +3194,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\event\\event9.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\event\\event-details.jpg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/event/event-details.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\event\\event-details.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\event\\speaker1.jpg",
@@ -3519,6 +3519,23 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\slider3.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\teacher\\teacher-details.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/teacher/teacher-details.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\teacher\\teacher-details.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\teacher\\teacher1.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -3723,12 +3740,12 @@
       "OriginalItemSpec": "wwwroot\\img\\teacher\\teacher9.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\teacher\\teacher-details.jpg",
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\testimonial\\testimonial-bg.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
       "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/teacher/teacher-details.jpg",
+      "RelativePath": "img/testimonial/testimonial-bg.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -3737,7 +3754,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\teacher\\teacher-details.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\testimonial\\testimonial-bg.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\testimonial\\testimonial.jpg",
@@ -3755,23 +3772,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\testimonial\\testimonial.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\testimonial\\testimonial-bg.jpg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/testimonial/testimonial-bg.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\testimonial\\testimonial-bg.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\js\\ajax-mail.js",
