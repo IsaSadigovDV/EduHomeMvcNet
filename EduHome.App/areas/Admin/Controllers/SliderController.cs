@@ -56,7 +56,7 @@ namespace EduHome.App.areas.Admin.Controllers
             {
                 ModelState.AddModelError("Formfile", "File size can not be more than 2 mb");
             }
-            slider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "/img");
+            slider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "/img/slider");
             slider.CreatedDate = DateTime.UtcNow.AddHours(4);
             await _context.AddAsync(slider);
             await _context.SaveChangesAsync();

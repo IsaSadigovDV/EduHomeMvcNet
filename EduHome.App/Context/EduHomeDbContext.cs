@@ -7,6 +7,7 @@ namespace EduHome.App.Context
     {
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<WelcomeEdu> WelcomeEdus { get; set; }
         public EduHomeDbContext(DbContextOptions<EduHomeDbContext> options) : base(options) { }
 
     }
