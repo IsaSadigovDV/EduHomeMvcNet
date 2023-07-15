@@ -64,7 +64,56 @@ namespace EduHome.App.areas.Admin.Controllers
 
         }
 
+        public async Task<IActionResult> Update(int id)
+        {
+            Slider? slider = await _context.Sliders
+                .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            if (slider == null)
+            {
+                return NotFound();
+            }
+            return View(slider);
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int id, Slider slider)
+        {
+           Slider? updatedSlider = await _context.Sliders
+                        .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            if (slider == null)
+            {
+                return NotFound();
+            }
+            if (!ModelState.IsValid)
+            {
+                return View(updatedSlider);
+            }
+
+            if(slider.FormFile != null)
+            {
+                if (!Helper.IsImage(slider.FormFile))
+                {
+                    ModelState.AddModelError("Formfile", "File type must be image");
+                }
+                if (!Helper.IsSizeOk(slider.FormFile, 2))
+                {
+                    ModelState.AddModelError("Formfile", "File size can not be more than 2 mb");
+                }
+
+                Helper.RemoveImage(_env.WebRootPath, "/img/slider", updatedSlider.Image);
+
+                updatedSlider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "/img/slider");
+
+            }
+            updatedSlider.Title = slider.Title;
+            updatedSlider.Text = slider.Text;
+            updatedSlider.Link = slider.Link;
+            updatedSlider.Image = slider.Image;
+            updatedSlider.UpdatedDate = DateTime.UtcNow.AddHours(4);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
 
 
