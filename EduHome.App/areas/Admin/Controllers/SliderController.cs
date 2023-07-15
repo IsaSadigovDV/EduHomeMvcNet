@@ -116,7 +116,20 @@ namespace EduHome.App.areas.Admin.Controllers
         }
 
 
+        public async Task<IActionResult> Delete(int id)
+        {
 
+            Slider? slider = await _context.Sliders
+                .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            if (slider == null)
+            {
+                return NotFound();
+            }
+
+            slider.IsDeleted = true;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
 
     }
 }
