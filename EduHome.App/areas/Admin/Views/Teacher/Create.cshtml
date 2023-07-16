@@ -1,0 +1,38 @@
+﻿@model Teacher
+<div class="container">
+    <form  method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+             <input type="text" class="form-control"  asp-for="@Model.Name">
+            <span class="text text-danger" asp-validation-for="@Model.Name"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        
+        <div class="form-group">
+            <label for="name">Mail</label>
+            <input type="text" class="form-control" asp-for="@Model.Mail">
+            <span class="text text-danger" asp-validation-for="@Model.Mail"></span>
+            @Html.AntiForgeryToken()
+        </div>
+
+        <div class="form-group">
+            <label for="name">ExperienceYear</label>
+            <input type="text" class="form-control" asp-for="@Model.ExperienceYear">
+            <span class="text text-danger" asp-validation-for="@Model.ExperienceYear"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        <div class="form-group">
+            <label for="name">Skype</label>
+            <input type="text" class="form-control" asp-for="@Model.Skype">
+            <span class="text text-danger" asp-validation-for="@Model.Skype"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        <div class="form-group">
+            <label for="name">Faculty</label>
+            <input type="text" class="form-control" asp-for="@Model.Faculty">
+            <span class="text text-danger" asp-validation-for="@Model.Faculty"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        <button style="background-color:lightseagreen" type="submit">Create</button>
+    </form>
+</div>
