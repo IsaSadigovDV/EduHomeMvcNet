@@ -6,20 +6,20 @@ using Microsoft.EntityFrameworkCore;
 namespace EduHome.App.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class DegreeController : Controller
+    public class HobbyController : Controller
     {
         private readonly EduHomeDbContext _context;
 
-        public DegreeController(EduHomeDbContext context)
+        public HobbyController(EduHomeDbContext context)
         {
             _context = context;
         }
 
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Degree> degrees = await _context.Degrees
+            IEnumerable<Hobby> hobbies = await _context.Hobbies
                         .Where(x => !x.IsDeleted).ToListAsync();
-            return View(degrees);
+            return View(hobbies);
         }
         [HttpGet]
         public async Task<IActionResult> Create()
@@ -28,22 +28,22 @@ namespace EduHome.App.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Degree degree)
+        public async Task<IActionResult> Create(Hobby hobby)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            await _context.AddAsync(degree);
+            await _context.AddAsync(hobby);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            Degree? degree = await _context.Degrees
+            Hobby? hobby = await _context.Hobbies
                   .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-            if(degree == null)
+            if(hobby == null)
             {
                 return NotFound();
             }
@@ -52,20 +52,20 @@ namespace EduHome.App.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, Degree updatedDegree)
+        public async Task<IActionResult> Update(int id, Hobby updatedHobby)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            Degree? degree = await _context.Degrees
+            Hobby? hobby = await _context.Hobbies
                   .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-            if (updatedDegree == null)
+            if (updatedHobby == null)
             {
                 return NotFound();
             }
 
-            degree.Name= updatedDegree.Name;
+            hobby.Name= updatedHobby.Name;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -76,14 +76,14 @@ namespace EduHome.App.Areas.Admin.Controllers
             {
                 return View();
             }
-            Degree? degree = await _context.Degrees
+            Hobby? hobby = await _context.Hobbies
                  .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
-            if (degree == null)
+            if (hobby == null)
             {
                 return NotFound();
             }
 
-            degree.IsDeleted = true;
+            hobby.IsDeleted = true;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
