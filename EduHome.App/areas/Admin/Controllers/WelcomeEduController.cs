@@ -116,5 +116,18 @@ namespace EduHome.App.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
 
         }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            WelcomeEdu? welcomeEdu = await _context.WelcomeEdus
+                   .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
+            if (welcomeEdu == null)
+            {
+                return NotFound();
+            }
+            welcomeEdu.IsDeleted = true;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
