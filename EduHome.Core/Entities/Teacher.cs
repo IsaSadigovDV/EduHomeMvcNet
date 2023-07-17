@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +22,8 @@ namespace EduHome.Core.Entities
         [Required]
         public string? Faculty { get; set; }
         [Required]
+        public string? Image { get; set; }
+        [Required]
         public int? PositionId { get; set; }
         [Required]
         public Position? Position { get; set; }
@@ -27,6 +31,11 @@ namespace EduHome.Core.Entities
         public int DegreeId { get; set; }   
         [Required]
         public Degree? Degree { get; set; }
+        public List<Skill>? Skills { get; set; }
+        public List<TeacherHobby>? TeacherHobbies { get; set; }
+        public List<Slider>? Slider { get; set; }
+        [NotMapped]
+        public IFormFile? FormFile { get; set; }
 
     }
 }

@@ -15,12 +15,12 @@ namespace EduHome.Core.Entities
         public string? Image { get; set; }
         [Required]
         [StringLength(50)]
-        public string? Title { get; set; }
+        public string Title { get; set; }
         [Required]
         [StringLength(100)]
-        public string? Text { get; set; }
+        public string Text { get; set; }
         [Required]
-        public string? Link { get; set; }
+        public string Link { get; set; }
         [NotMapped]
         public IFormFile? FormFile { get; set; }
 

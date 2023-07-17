@@ -1,0 +1,19 @@
+﻿@model Notice
+<div class="container">
+    <form  method="post">
+        <div class="form-group">
+            <label for="description">Description</label>
+             <input type="text" class="form-control"  asp-for="@Model.Description">
+            <span class="text text-danger" asp-validation-for="@Model.Description"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        <div class="form-group">
+            <label for="name">DateTime</label>
+            <input type="date" class="form-control" asp-for="@Model.dateTime">
+            <span class="text text-danger" asp-validation-for="@Model.dateTime"></span>
+            @Html.AntiForgeryToken()
+        </div>
+
+        <button style="background-color:lightseagreen" type="submit">Create</button>
+    </form>
+</div>

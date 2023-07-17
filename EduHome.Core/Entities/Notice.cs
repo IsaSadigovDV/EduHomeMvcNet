@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace EduHome.Core.Entities
 {
-    public class Position:BaseModel
+    public class Notice:BaseModel
     {
+        [Required(ErrorMessage ="Description can not be empty")]
+        public string Description { get; set; }
         [Required]
-        public string? Name { get; set; }
-        public List<Teacher>? Teachers { get; set; }
+        public DateTime dateTime { get; set; }
     }
 }

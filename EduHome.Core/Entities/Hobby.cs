@@ -11,6 +11,7 @@ namespace EduHome.Core.Entities
     {
         [Required]
         public string? Name { get; set; }
+        public List<TeacherHobby>? TeacherHobbies { get; set; }
 
     }
 }

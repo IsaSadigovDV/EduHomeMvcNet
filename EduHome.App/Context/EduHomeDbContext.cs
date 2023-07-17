@@ -16,6 +16,7 @@ namespace EduHome.App.Context
         public DbSet<Hobby> Hobbies  { get; set; }
         public DbSet<Degree> Degrees  { get; set; }
         public DbSet<Tag> Tags  { get; set; }
+        public DbSet<Notice> Notices  { get; set; }
         public EduHomeDbContext(DbContextOptions<EduHomeDbContext> options) : base(options) { }
 
     }

@@ -33,6 +33,10 @@
             <span class="text text-danger" asp-validation-for="@Model.Faculty"></span>
             @Html.AntiForgeryToken()
         </div>
+      @*  <div class="form-group">
+            <label asp-for="PositionId">Positions</label>
+            <select class="form-control" asp-for="PositionId" asp-items="@ViewBa"></select>
+        </div>*@
         <button style="background-color:lightseagreen" type="submit">Create</button>
     </form>
 </div>
