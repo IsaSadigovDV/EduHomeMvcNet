@@ -7,11 +7,10 @@ using System.Threading.Tasks;
 
 namespace EduHome.Core.Entities
 {
-    public class Tag:BaseModel
+    public class CourseAssests:BaseModel
     {
         [Required]
         public string Name { get; set; }
-        public List<CourseTag>? courseTags { get; set; }
-
+        public List<Course>? Courses { get; set; }
     }
 }
