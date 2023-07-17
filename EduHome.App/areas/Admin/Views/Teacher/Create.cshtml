@@ -1,6 +1,6 @@
 ﻿@model Teacher
 <div class="container">
-    <form  method="post">
+    <form  method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="name">Name</label>
              <input type="text" class="form-control"  asp-for="@Model.Name">
@@ -33,9 +33,46 @@
             <span class="text text-danger" asp-validation-for="@Model.Faculty"></span>
             @Html.AntiForgeryToken()
         </div>
-      @*  <div class="form-group">
-            <label asp-for="PositionId">Positions</label>
-            <select class="form-control" asp-for="PositionId" asp-items="@ViewBa"></select>
+         <div class="form-group">
+            <label asp-for="FormFile"></label>
+            <input accept="image/*" type="file" class="form-control" asp-for="FormFile">
+            <span class="text text-danger" asp-validation-for="FormFile"></span>
+        </div>
+        <div class="form-group">
+            <select asp-for="PositionId" class="form-select" aria-label="Disabled select example">
+                <option value="0">Choose Position</option>
+                @foreach (var item in ViewBag.Position)
+                {
+
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <span class="text text-danger" asp-validation-for="PositionId"></span>
+        </div>
+        <div class="form-group">
+            <select asp-for="DegreeId" class="form-select" aria-label="Disabled select example">
+                <option value="0">Choose Degree</option>
+                @foreach (var item in ViewBag.Degree)
+                {
+
+                    <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <span class="text text-danger" asp-validation-for="PositionId"></span>
+     @*   </div>
+           <div class="form-group">
+            <select asp-for="SkillId" class="form-select" aria-label="Disabled select example">
+                <option value="0">Choose Skill</option>
+                @foreach (var item in ViewBag.Skill)
+                {
+
+                        <option value="@item.Id">@item.Name</option>
+
+                }
+            </select>
+            <span class="text text-danger" asp-validation-for="SkillId"></span>
         </div>*@
         <button style="background-color:lightseagreen" type="submit">Create</button>
     </form>

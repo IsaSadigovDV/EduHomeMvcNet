@@ -21,7 +21,7 @@
             <input accept="image/*" type="file" class="form-control" asp-for="FormFile">
             <span class="text text-danger" asp-validation-for="FormFile"></span>
         </div>
-        <img style="width:200px;height:200px;" src="/img/slider/@Model.Image" />
+        <img style="width:200px;height:200px;" src="img/slider/@Model.Image" />
         @Html.AntiForgeryToken()
         <button type="submit">Update</button>
     </form>

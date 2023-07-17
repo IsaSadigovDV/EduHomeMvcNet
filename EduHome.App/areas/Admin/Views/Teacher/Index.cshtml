@@ -11,6 +11,7 @@
                 <th scope="col">Faculty</th>
                 <th scope="col">Position</th>
                 <th scope="col">Degree</th>
+                <th scope="col">Image</th>
                 <th scope="col">Update</th>
                 <th scope="col">Delete</th>
             </tr>
@@ -28,6 +29,7 @@
                     <th>@item.Faculty</th>
                     <th>@item.Position</th>
                     <th>@item.Degree</th>
+                    <th><img style="width:70px;height:70px;object-fit:cover;" src="~/img/slider/@item.Image" /></th>
                     <td><a asp-controller="teacher" asp-action="update" asp-route-id="@item.Id"><i class="fas fa-edit text text-primary"></i></a></td>
                     <td><a onclick="if (!confirm('Delete selected item?')){return false;}" asp-controller="teacher" asp-action="Delete" asp-route-id="@item.Id" class=" delete-item"><i class="fas fa-trash text text-danger"></i></a></td>
                 </tr>
@@ -35,23 +37,6 @@
 
         </tbody>
     </table>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            @for (int i = 1; i <= ViewBag.TotalPage; i++)
-            {
-
-
-                @if (i == ViewBag.CurrentPage)
-                {
-                    <li class="page-item disabled"><a class=" page-link" asp-controller="teacher" asp-action="index" asp-route-page="@i">@i</a></li>
-                }
-                else
-                {
-                    <li class="page-item"><a class=" page-link" asp-controller="teacher" asp-action="index" asp-route-page="@i">@i</a></li>
-                }
-            }
-        </ul>
-    </nav>
     <div>
         <a asp-controller="teacher" asp-action="create" style="display: block; text-decoration: none; color: white; width: 100%; height: 100%"> <div style="width:100%; " class="btn btn-outline-success">Create Teacher </div></a>
     </div>

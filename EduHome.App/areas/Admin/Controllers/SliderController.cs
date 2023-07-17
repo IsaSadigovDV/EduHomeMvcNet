@@ -56,7 +56,7 @@ namespace EduHome.App.areas.Admin.Controllers
             {
                 ModelState.AddModelError("Formfile", "File size can not be more than 2 mb");
             }
-            slider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "/img/slider");
+            slider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "img/slider/");
             slider.CreatedDate = DateTime.UtcNow.AddHours(4);
             await _context.AddAsync(slider);
             await _context.SaveChangesAsync();
@@ -101,15 +101,14 @@ namespace EduHome.App.areas.Admin.Controllers
                     ModelState.AddModelError("Formfile", "File size can not be more than 2 mb");
                 }
 
-                Helper.RemoveImage(_env.WebRootPath, "/img/slider", updatedSlider.Image);
+                Helper.RemoveImage(_env.WebRootPath, "img/slider/", updatedSlider.Image);
 
-                updatedSlider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "/img/slider");
+                updatedSlider.Image = slider.FormFile.CreateImage(_env.WebRootPath, "img/slider/");
 
             }
             updatedSlider.Title = slider.Title;
             updatedSlider.Text = slider.Text;
             updatedSlider.Link = slider.Link;
-            updatedSlider.Image = slider.Image;
             updatedSlider.UpdatedDate = DateTime.UtcNow.AddHours(4);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

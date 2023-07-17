@@ -9,19 +9,20 @@ using System.Threading.Tasks;
 
 namespace EduHome.Core.Entities
 {
-    public class Teacher:BaseModel
+    public class Teacher : BaseModel
     {
         [Required]
         public string? Name { get; set; }
         [Required]
         public string? Mail { get; set; }
-        [Required]  
+        [Required]
         public int? ExperienceYear { get; set; }
+        [Required]
+        public string? AboutMe { get; set; }
         [Required]
         public string? Skype { get; set; }
         [Required]
         public string? Faculty { get; set; }
-        [Required]
         public string? Image { get; set; }
         [Required]
         public int? PositionId { get; set; }

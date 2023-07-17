@@ -11,7 +11,6 @@ namespace EduHome.Core.Entities
 {
     public class Slider:BaseModel
     {
-        [Required]
         public string? Image { get; set; }
         [Required]
         [StringLength(50)]

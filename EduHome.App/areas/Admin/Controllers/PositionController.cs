@@ -36,7 +36,7 @@ namespace EduHome.App.Areas.Admin.Controllers
             }
             await _context.AddAsync(position);
             await _context.SaveChangesAsync();
-            return RedirectToAction("index", "category");
+            return RedirectToAction(nameof(Index));
         }
 
         [HttpGet]
