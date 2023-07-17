@@ -22,6 +22,8 @@ namespace EduHome.Core.Entities
         [Required]
         public string? Skype { get; set; }
         [Required]
+        public string? PhoneNumber { get; set; }
+        [Required]
         public string? Faculty { get; set; }
         public string? Image { get; set; }
         [Required]
@@ -33,6 +35,7 @@ namespace EduHome.Core.Entities
         [Required]
         public Degree? Degree { get; set; }
         public List<Skill>? Skills { get; set; }
+        public List<Social>? Socials { get; set; }
         public List<TeacherHobby>? TeacherHobbies { get; set; }
         public List<Slider>? Slider { get; set; }
         [NotMapped]
