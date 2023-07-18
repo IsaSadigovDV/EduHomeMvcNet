@@ -10,7 +10,7 @@ namespace EduHome.Core.Entities
     {
         public string Name { get; set; }
         public List<CourseCategory>? courseCategories { get; set; }
-
+        public List<BlogCategory>? blogCategories { get; set;}
 
     }
 }
