@@ -37,9 +37,11 @@ namespace EduHome.Core.Entities
         public List<Skill>? Skills { get; set; }
         public List<Social>? Socials { get; set; }
         public List<TeacherHobby>? TeacherHobbies { get; set; }
-        public List<Slider>? Slider { get; set; }
         [NotMapped]
         public IFormFile? FormFile { get; set; }
 
-    }
+		[NotMapped]
+		public List<int>? HobbyIds { get; set; }
+
+	}
 }

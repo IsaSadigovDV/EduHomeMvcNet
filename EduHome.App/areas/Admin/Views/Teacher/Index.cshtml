@@ -4,14 +4,10 @@
         <thead>
             <tr>
                 <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Mail</th>
-                <th scope="col">ExperienceYear</th>
-                <th scope="col">Skype</th>
-                <th scope="col">Faculty</th>
-                <th scope="col">Position</th>
-                <th scope="col">Degree</th>
-                <th scope="col">Image</th>
+                <th scope="col">Name:</th>
+                <th scope="col">Position:</th>
+                <th scope="col">Degree:</th>
+                <th scope="col">Image:</th>
                 <th scope="col">Update</th>
                 <th scope="col">Delete</th>
             </tr>
@@ -21,14 +17,11 @@
             @foreach (var item in Model)
             {
                 <tr>
-                    <th scope="row">@item.Id</th>
-                    <th>@item.Name</th>
-                    <th>@item.Mail</th>
-                    <th>@item.ExperienceYear</th>
-                    <th>@item.Skype</th>
-                    <th>@item.Faculty</th>
-                    <th>@item.Position</th>
-                    <th>@item.Degree</th>
+                     <th scope="row">@item.Id</th>
+                     <th>@item.Name</th>
+                     <th>@item.Position.Name</th>
+                     <th>@item.Degree.Name</th>
+                     <th><img style="width:100px;height:100px" src="~/img/teacher/@item.Image" /></th>
                     <th><img style="width:70px;height:70px;object-fit:cover;" src="~/img/slider/@item.Image" /></th>
                     <td><a asp-controller="teacher" asp-action="update" asp-route-id="@item.Id"><i class="fas fa-edit text text-primary"></i></a></td>
                     <td><a onclick="if (!confirm('Delete selected item?')){return false;}" asp-controller="teacher" asp-action="Delete" asp-route-id="@item.Id" class=" delete-item"><i class="fas fa-trash text text-danger"></i></a></td>

@@ -9,26 +9,38 @@
         </div>
         
         <div class="form-group">
-            <label for="name">Mail</label>
+            <label for="Mail">Mail</label>
             <input type="text" class="form-control" asp-for="@Model.Mail">
             <span class="text text-danger" asp-validation-for="@Model.Mail"></span>
             @Html.AntiForgeryToken()
         </div>
 
         <div class="form-group">
-            <label for="name">ExperienceYear</label>
+            <label for="ExperienceYear">ExperienceYear</label>
             <input type="text" class="form-control" asp-for="@Model.ExperienceYear">
             <span class="text text-danger" asp-validation-for="@Model.ExperienceYear"></span>
             @Html.AntiForgeryToken()
         </div>
         <div class="form-group">
-            <label for="name">Skype</label>
+            <label for="aboutme">AboutMe</label>
+            <input type="text" class="form-control" asp-for="@Model.AboutMe">
+            <span class="text text-danger" asp-validation-for="@Model.AboutMe"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        <div class="form-group">
+            <label for="Skype">Skype</label>
             <input type="text" class="form-control" asp-for="@Model.Skype">
             <span class="text text-danger" asp-validation-for="@Model.Skype"></span>
             @Html.AntiForgeryToken()
         </div>
         <div class="form-group">
-            <label for="name">Faculty</label>
+            <label for="phonenumber">Phone Number</label>
+            <input type="text" class="form-control" asp-for="@Model.PhoneNumber">
+            <span class="text text-danger" asp-validation-for="@Model.PhoneNumber"></span>
+            @Html.AntiForgeryToken()
+        </div>
+        <div class="form-group">
+            <label for="Faculty">Faculty</label>
             <input type="text" class="form-control" asp-for="@Model.Faculty">
             <span class="text text-danger" asp-validation-for="@Model.Faculty"></span>
             @Html.AntiForgeryToken()
@@ -60,20 +72,19 @@
 
                 }
             </select>
-            <span class="text text-danger" asp-validation-for="PositionId"></span>
-     @*   </div>
-           <div class="form-group">
-            <select asp-for="SkillId" class="form-select" aria-label="Disabled select example">
-                <option value="0">Choose Skill</option>
-                @foreach (var item in ViewBag.Skill)
+            <span class="text text-danger" asp-validation-for="DegreeId"></span>
+       </div>
+
+        <div class="form-group">
+            <label asp-for="HobbyIds">Hobbies</label>
+            <select multiple asp-for="HobbyIds" class="form-select" aria-label="Default select example">
+                @foreach (var item in ViewBag.Hobbies)
                 {
-
-                        <option value="@item.Id">@item.Name</option>
-
+                    <option value="@item.Id">@item.Name</option>
                 }
             </select>
-            <span class="text text-danger" asp-validation-for="SkillId"></span>
-        </div>*@
+            <span asp-validation-for="HobbyIds" class="text text-danger"></span>
+        </div>
         <button style="background-color:lightseagreen" type="submit">Create</button>
     </form>
 </div>
