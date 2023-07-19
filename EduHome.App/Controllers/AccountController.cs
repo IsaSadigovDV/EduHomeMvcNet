@@ -253,6 +253,20 @@ namespace EduHome.App.Controllers
             return RedirectToAction("login", "account");
         }
 
+        //public async Task<IActionResult> CreateRole()
+        //{
+        //    IdentityRole identityRole1 = new IdentityRole { Name = "SuperAdmin" };
+        //    IdentityRole identityRole2 = new IdentityRole { Name = "Admin" };
+        //    IdentityRole identityRole3 = new IdentityRole { Name = "User" };
+
+        //    await _roleManager.CreateAsync(identityRole1);
+
+        //    await _roleManager.CreateAsync(identityRole2);
+
+        //    await _roleManager.CreateAsync(identityRole3);
+
+        //    return Json("ok");
+        //}
 
     }
 }

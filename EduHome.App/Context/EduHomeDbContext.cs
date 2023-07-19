@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EduHome.App.Context
 {
-    public class EduHomeDbContext:IdentityDbContext
+    public class EduHomeDbContext:IdentityDbContext<AppUser>
     {
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<Category> Categories { get; set; }
