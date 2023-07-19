@@ -17,6 +17,7 @@ namespace EduHome.App.Context
         public DbSet<Setting> Settings { get; set; }
         public DbSet<Hobby> Hobbies  { get; set; }
         public DbSet<Degree> Degrees  { get; set; }
+        public DbSet<Contact> Contacts  { get; set; }
         public DbSet<Tag> Tags  { get; set; }
         public DbSet<Notice> Notices  { get; set; }
         public DbSet<Course> Courses  { get; set; }
