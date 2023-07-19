@@ -14,6 +14,7 @@ namespace EduHome.App.Context
         public DbSet<Social> Socials  { get; set; }
         public DbSet<Skill> Skills  { get; set; }
         public DbSet<Position> Positions  { get; set; }
+        public DbSet<Setting> Settings { get; set; }
         public DbSet<Hobby> Hobbies  { get; set; }
         public DbSet<Degree> Degrees  { get; set; }
         public DbSet<Tag> Tags  { get; set; }

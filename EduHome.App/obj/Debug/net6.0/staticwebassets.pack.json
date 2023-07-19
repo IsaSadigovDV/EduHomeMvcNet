@@ -577,8 +577,16 @@
       "PackagePath": "staticwebassets\\fonts\\ionicons28b5.woff"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\about.png",
       "PackagePath": "staticwebassets\\img\\about\\about.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\e3506bfd-125b-4191-a1aa-788c301faaf0nissan.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\e3506bfd-125b-4191-a1aa-788c301faaf0nissan.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\banner\\banner.jpg",
@@ -809,8 +817,16 @@
       "PackagePath": "staticwebassets\\img\\post\\post3.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\19e6781c-a216-4b31-b6de-4c40c90005a4nissan.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\19e6781c-a216-4b31-b6de-4c40c90005a4nissan.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\21fd44d3-fc11-4742-97ca-e797e8e8c021papatya.jpg",
       "PackagePath": "staticwebassets\\img\\slider\\21fd44d3-fc11-4742-97ca-e797e8e8c021papatya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\6c4f0f12-924d-4cc6-8f9a-6261407297bapapatya.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\6c4f0f12-924d-4cc6-8f9a-6261407297bapapatya.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\7404006a-a7fb-4813-a4f7-843f02624db5cactus.jpg",
@@ -821,12 +837,12 @@
       "PackagePath": "staticwebassets\\img\\slider\\7c6882ab-beea-4da5-b088-bc951ef04674cactus.jpg"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\a9d789f8-e97e-4267-91f7-ad79d5207ac4nissan.jpg",
-      "PackagePath": "staticwebassets\\img\\slider\\a9d789f8-e97e-4267-91f7-ad79d5207ac4nissan.jpg"
-    },
-    {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\f10b79d8-a953-4d9d-95bf-52fad06c26e4cactus.jpg",
       "PackagePath": "staticwebassets\\img\\slider\\f10b79d8-a953-4d9d-95bf-52fad06c26e4cactus.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\f243064b-3c92-44d4-81eb-2f9fe1c5edc0cactus.jpg",
+      "PackagePath": "staticwebassets\\img\\slider\\f243064b-3c92-44d4-81eb-2f9fe1c5edc0cactus.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\home.png",

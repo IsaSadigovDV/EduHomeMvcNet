@@ -1,4 +1,5 @@
 ﻿using EduHome.App.Context;
+using EduHome.App.ViewModels;
 using EduHome.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -15,9 +16,26 @@ namespace EduHome.App.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            HomeVM homeVM = new HomeVM()
+            {
+                Sliders = _context.Sliders.Where(x => !x.IsDeleted).ToList(),
+                Notices = _context.Notices.Where(x => !x.IsDeleted).ToList(),
+                Teachers = _context.Teachers.Where(x => !x.IsDeleted)
+                .Include(x => x.Position)
+                  .Include(x => x.Degree)
+                 .Include(x => x.Socials).Take(3)
+                .ToList(),
+                Courses = _context.Courses.Where(x => !x.IsDeleted)
+                 .ToList(),
+                Settings = _context.Settings.Where(x => !x.IsDeleted)
+                   .FirstOrDefault(),
+                Blogs = _context.Blogs.Where(x => !x.IsDeleted)
+                .Take(3)
+                 .ToList(),
+            };
+            return View(homeVM);
         }
 
         [HttpPost]

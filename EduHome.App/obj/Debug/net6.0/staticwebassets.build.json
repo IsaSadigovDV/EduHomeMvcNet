@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5ieLrHp841joAyp6tsD6z7tS2aFH+1nz67azoAe31wU=",
+  "Hash": "Z41qp3/XqrN888Of5Y41uKQG7NYBtpxIfi1yO4oe8XY=",
   "Source": "EduHome.App",
   "BasePath": "_content/EduHome.App",
   "Mode": "Default",
@@ -2482,6 +2482,23 @@
       "OriginalItemSpec": "wwwroot\\fonts\\Material-Design-Iconic-Fontd1f1.woff2"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/about/645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\about\\645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\about.png",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -2497,6 +2514,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\about\\about.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\e3506bfd-125b-4191-a1aa-788c301faaf0nissan.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/about/e3506bfd-125b-4191-a1aa-788c301faaf0nissan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\about\\e3506bfd-125b-4191-a1aa-788c301faaf0nissan.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\banner\\banner.jpg",
@@ -3468,6 +3502,23 @@
       "OriginalItemSpec": "wwwroot\\img\\post\\post3.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\19e6781c-a216-4b31-b6de-4c40c90005a4nissan.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/slider/19e6781c-a216-4b31-b6de-4c40c90005a4nissan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\19e6781c-a216-4b31-b6de-4c40c90005a4nissan.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\21fd44d3-fc11-4742-97ca-e797e8e8c021papatya.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -3483,6 +3534,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\slider\\21fd44d3-fc11-4742-97ca-e797e8e8c021papatya.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\6c4f0f12-924d-4cc6-8f9a-6261407297bapapatya.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/slider/6c4f0f12-924d-4cc6-8f9a-6261407297bapapatya.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\6c4f0f12-924d-4cc6-8f9a-6261407297bapapatya.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\7404006a-a7fb-4813-a4f7-843f02624db5cactus.jpg",
@@ -3519,23 +3587,6 @@
       "OriginalItemSpec": "wwwroot\\img\\slider\\7c6882ab-beea-4da5-b088-bc951ef04674cactus.jpg"
     },
     {
-      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\a9d789f8-e97e-4267-91f7-ad79d5207ac4nissan.jpg",
-      "SourceId": "EduHome.App",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
-      "BasePath": "_content/EduHome.App",
-      "RelativePath": "img/slider/a9d789f8-e97e-4267-91f7-ad79d5207ac4nissan.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\slider\\a9d789f8-e97e-4267-91f7-ad79d5207ac4nissan.jpg"
-    },
-    {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\f10b79d8-a953-4d9d-95bf-52fad06c26e4cactus.jpg",
       "SourceId": "EduHome.App",
       "SourceType": "Discovered",
@@ -3551,6 +3602,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\slider\\f10b79d8-a953-4d9d-95bf-52fad06c26e4cactus.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\f243064b-3c92-44d4-81eb-2f9fe1c5edc0cactus.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/slider/f243064b-3c92-44d4-81eb-2f9fe1c5edc0cactus.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\f243064b-3c92-44d4-81eb-2f9fe1c5edc0cactus.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\home.png",
