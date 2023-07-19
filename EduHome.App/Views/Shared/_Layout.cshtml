@@ -12,19 +12,19 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/meanmenu.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/et-line-icon.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/meanmenu.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/et-line-icon.css">
+    <link rel="stylesheet" href="~/css/reset.css">
+    <link rel="stylesheet" href="~/css/ionicons.min.css">
+    <link rel="stylesheet" href="~/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -43,8 +43,16 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="header-top-right text-right">
                             <ul>
-                                <li><a href="login.html">login</a></li>
-                                <li><a href="signup.html">signup</a></li>
+                                @if (User.Identity.IsAuthenticated || User.IsInRole("User"))
+                                {
+                                    <li><a asp-controller="account" asp-action="info"><span>@User.Identity.Name</span></a></li>
+                                    <a asp-controller="account" asp-action="logout"><span>LogOut</span></a>
+                                }
+                                else
+                                {
+                                    <li> <a asp-controller="account" asp-action="login"><span>Login</span></a></li>
+                                    <li> <a asp-controller="account" asp-action="register"><span>Register</span></a></li>
+                                }
                             </ul>
                         </div>
                     </div>
@@ -212,16 +220,16 @@
         </footer>
         <!-- Footer End -->
 
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.meanmenu.js"></script>
-        <script src="js/jquery.magnific-popup.js"></script>
-        <script src="js/ajax-mail.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.mb.YTPlayer.js"></script>
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="~/js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/jquery.meanmenu.js"></script>
+        <script src="~/js/jquery.magnific-popup.js"></script>
+        <script src="~/js/ajax-mail.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/jquery.mb.YTPlayer.js"></script>
+        <script src="~/js/jquery.nicescroll.min.js"></script>
+        <script src="~/js/plugins.js"></script>
+        <script src="~/js/main.js"></script>
     </body>
 
 <!-- Mirrored from demo.devitems.com/eduhome/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jun 2020 19:41:25 GMT -->
