@@ -43,7 +43,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="header-top-right text-right">
                             <ul>
-                                @if (User.Identity.IsAuthenticated && User.IsInRole("User"))
+                                @if (User.Identity.IsAuthenticated)
                                 {
                                     <li><a asp-controller="account" asp-action="info"><span>@User.Identity.Name</span></a></li>
                                     <li><a asp-controller="account" asp-action="logout"><span>LogOut</span></a></li>
@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo/logo2.png" alt="eduhome" /></a>
+                            <a href="/index"><img src="img/logo/logo2.png" alt="eduhome" /></a>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-6">
@@ -74,7 +74,7 @@
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="index.html">Home</a>
+                                            <a href="/index">Home</a>
                                             <ul>
                                                 <li><a href="index.html">Home One</a></li>
                                                 <li><a href="index-2.html">Home Two</a></li>
@@ -85,10 +85,10 @@
                                         </li>
                                         <li><a href="/about">About</a></li>
                                         <li>
-                                            <a href="course.html">courses</a>
+                                            <a href="/course">courses</a>
                                             <ul>
-                                                <li><a href="course.html">courses</a></li>
-                                                <li><a href="course-details.html">courses details</a></li>
+                                                <li><a href="/course">courses</a></li>
+                                                <li><a href="/course-details">courses details</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -101,14 +101,14 @@
                                             </ul>
                                         </li>
                                         <li class="hidden-sm">
-                                            <a href="teacher.html">teacher</a>
+                                            <a href="/teacher">teacher</a>
                                             <ul>
-                                                <li><a href="teacher.html">teacher</a></li>
-                                                <li><a href="teacher-details.html">teacher details</a></li>
+                                                <li><a href="/teacher">teacher</a></li>
+                                                <li><a href="/teacher-details">teacher details</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="blog.html">blog</a>
+                                            <a href="/blog">blog</a>
                                             <ul>
                                                 <li><a href="blog.html">blog</a></li>
                                                 <li><a href="blog-left-side-bar.html">blog left sidebar</a></li>
@@ -259,6 +259,7 @@
         <script src="~/js/jquery.nicescroll.min.js"></script>
         <script src="~/js/plugins.js"></script>
         <script src="~/js/main.js"></script>
+        <script src="~/js/script.js"></script>
     </body>
 
 <!-- Mirrored from demo.devitems.com/eduhome/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jun 2020 19:41:25 GMT -->

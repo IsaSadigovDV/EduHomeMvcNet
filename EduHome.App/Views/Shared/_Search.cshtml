@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Course>
+
+
+@foreach (var item in Model)
+{
+	<li class="search-nameli">
+		<a style="color:gray !important; ">
+			@item.Id
+			@item.Name
+			@item.Image
+		</a>
+	</li>
+}

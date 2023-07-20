@@ -12,20 +12,20 @@ namespace EduHome.Core.Entities
     public class Teacher : BaseModel
     {
         [Required]
-        public string? Name { get; set; }
+        public string Name { get; set; }
         [Required]
-        public string? Mail { get; set; }
+        public string Mail { get; set; }
         [Required]
-        public int? ExperienceYear { get; set; }
+        public int ExperienceYear { get; set; }
         [Required]
-        public string? AboutMe { get; set; }
+        public string AboutMe { get; set; }
         [Required]
-        public string? Skype { get; set; }
+        public string Skype { get; set; }
         [Required]
-        public string? PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [Required]
-        public string? Faculty { get; set; }
-        public string? Image { get; set; }
+        public string Faculty { get; set; }
+        public string Image { get; set; }
         [Required]
         public int? PositionId { get; set; }
         [Required]

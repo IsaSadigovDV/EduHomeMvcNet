@@ -961,12 +961,20 @@
       "PackagePath": "staticwebassets\\js\\plugins.js"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\js\\vendor\\jquery-1.12.0.min.js",
       "PackagePath": "staticwebassets\\js\\vendor\\jquery-1.12.0.min.js"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\js\\vendor\\modernizr-2.8.3.min.js",
       "PackagePath": "staticwebassets\\js\\vendor\\modernizr-2.8.3.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\templates\\EmailExample.html",
+      "PackagePath": "staticwebassets\\templates\\EmailExample.html"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.EduHome.App.Microsoft.AspNetCore.StaticWebAssets.props",
