@@ -25,14 +25,12 @@ namespace EduHome.Core.Entities
         public string PhoneNumber { get; set; }
         [Required]
         public string Faculty { get; set; }
-        public string Image { get; set; }
+        public string? Image { get; set; }
         [Required]
-        public int? PositionId { get; set; }
-        [Required]
+        public int PositionId { get; set; }
         public Position? Position { get; set; }
         [Required]
         public int DegreeId { get; set; }   
-        [Required]
         public Degree? Degree { get; set; }
         public List<Skill>? Skills { get; set; }
         public List<Social>? Socials { get; set; }

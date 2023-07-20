@@ -17,8 +17,10 @@ namespace EduHome.App.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            IEnumerable<Social> socials = await _context.Socials.Where(x=>!x.IsDeleted).ToListAsync();
-            return View(socials);
+            IEnumerable<Social> Socials = await _context.Socials.Where(x => !x.IsDeleted)
+             .Include(x => x.Teacher)
+              .ToListAsync();
+            return View(Socials);
         }
 
         public async Task<IActionResult> Create()

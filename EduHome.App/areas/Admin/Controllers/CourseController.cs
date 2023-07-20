@@ -33,7 +33,6 @@ namespace EduHome.App.Areas.Admin.Controllers
             ViewBag.Categories = await _context.Categories.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Tags = await _context.Tags.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Languages = await _context.CourseLanguages.Where(x => !x.IsDeleted).ToListAsync();
-            ViewBag.CourseAssests = await _context.courseAssests.Where(x => !x.IsDeleted).ToListAsync();
             return View();
         }
 
@@ -44,7 +43,6 @@ namespace EduHome.App.Areas.Admin.Controllers
             ViewBag.Categories = await _context.Categories.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Tags = await _context.Tags.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Languages = await _context.CourseLanguages.Where(x => !x.IsDeleted).ToListAsync();
-            ViewBag.CourseAssests = await _context.courseAssests.Where(x => !x.IsDeleted).ToListAsync();
 
             if (!ModelState.IsValid)
             {
@@ -108,14 +106,12 @@ namespace EduHome.App.Areas.Admin.Controllers
             ViewBag.Categories = await _context.Categories.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Tags = await _context.Tags.Where(x => !x.IsDeleted).ToListAsync();
             ViewBag.Languages = await _context.CourseLanguages.Where(x => !x.IsDeleted).ToListAsync();
-            ViewBag.CourseAssests = await _context.courseAssests.Where(x => !x.IsDeleted).ToListAsync();
 
             Course? course = await _context.Courses.Where(x => !x.IsDeleted && x.Id == id)
                 .AsNoTracking()
                 .Include(x => x.courseCategories).ThenInclude(x => x.Category)
                 .Include(x => x.courseTags).ThenInclude(x => x.Tag)
                 .Include(x => x.CourseLanguage)
-                .Include(x => x.courseAssests)
                 .FirstOrDefaultAsync();
             if (course == null)
             {
@@ -133,7 +129,6 @@ namespace EduHome.App.Areas.Admin.Controllers
                             .Include(x => x.courseCategories).ThenInclude(x => x.Category)
                             .Include(x => x.courseTags).ThenInclude(x => x.Tag)
                              .Include(x => x.CourseLanguage)
-                             .Include(x => x.courseAssests)
                             .FirstOrDefaultAsync();
 
             if (course is null)
@@ -205,7 +200,6 @@ namespace EduHome.App.Areas.Admin.Controllers
             updatedcourse.StartDate = course.StartDate;
             updatedcourse.EndDate = course.EndDate;
             updatedcourse.CourseLanguageId = course.CourseLanguageId;
-            updatedcourse.CourseAssestsId = course.CourseAssestsId;
             _context.Courses.Update(course);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

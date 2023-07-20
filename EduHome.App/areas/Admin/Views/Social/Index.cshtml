@@ -19,7 +19,7 @@
                     <th scope="row">@item.Id</th>
                     <th>@item.Name</th>
                     <th>@item.Link</th>
-                    <th>@item.Teacher</th>
+                    <th>@item.Teacher.Id</th>
                     <td><a asp-controller="social" asp-action="update" asp-route-id="@item.Id"><i class="fas fa-edit text text-primary"></i></a></td>
                     <td><a onclick="if (!confirm('Delete selected item?')){return false;}" asp-controller="social" asp-action="Delete" asp-route-id="@item.Id" class=" delete-item"><i class="fas fa-trash text text-danger"></i></a></td>
                 </tr>

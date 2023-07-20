@@ -28,6 +28,11 @@
 			<span asp-validation-for="Certificiation" class="text text-danger"></span>
 		</div>
 		<div class="form-group">
+			<label asp-for="Assesments">Assesments Text:</label>
+			<input type="text" class="form-control" asp-for="Assesments" />
+			<span asp-validation-for="Assesments" class="text text-danger"></span>
+		</div>
+		<div class="form-group">
 			<label asp-for="ClassDuration">Class Duration:</label>
 			<input class="form-control" asp-for="ClassDuration" />
 			<span asp-validation-for="ClassDuration" class="text text-danger"></span>
@@ -109,25 +114,6 @@
 				}
 			</select>
 			<span asp-validation-for="CourseLanguageId" class="text text-danger"></span>
-		</div>
-		<div class="form-group">
-			<label asp-for="CourseAssestsId">Assests</label>
-			<select asp-for="CourseAssestsId" class="form-select" aria-label="Default select example">
-				<option value="0">Choose one of them</option>
-				@foreach (var item in ViewBag.CourseAssests)
-				{
-					if (Model.CourseAssestsId != null)
-					{
-						if (Model.CourseAssestsId == item.Id)
-						{
-							<option selected value="@item.Id">@item.Name</option>
-							continue;
-						}
-					}
-					<option value="@item.Id">@item.Name</option>
-				}
-			</select>
-			<span asp-validation-for="CourseAssestsId" class="text text-danger"></span>
 		</div>
 		<div class="form-group">
 			<label asp-for="@Model.file">File:</label>

@@ -276,15 +276,16 @@ namespace EduHome.App.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Assesments")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Certificiation")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("ClassDuration")
                         .HasColumnType("float");
-
-                    b.Property<int>("CourseAssestsId")
-                        .HasColumnType("int");
 
                     b.Property<double>("CourseFee")
                         .HasColumnType("float");
@@ -327,37 +328,9 @@ namespace EduHome.App.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CourseAssestsId");
-
                     b.HasIndex("CourseLanguageId");
 
                     b.ToTable("Courses");
-                });
-
-            modelBuilder.Entity("EduHome.Core.Entities.CourseAssests", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("courseAssests");
                 });
 
             modelBuilder.Entity("EduHome.Core.Entities.CourseCategory", b =>
@@ -799,8 +772,7 @@ namespace EduHome.App.Migrations
                     b.Property<int>("DegreeId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ExperienceYear")
-                        .IsRequired()
+                    b.Property<int>("ExperienceYear")
                         .HasColumnType("int");
 
                     b.Property<string>("Faculty")
@@ -825,8 +797,7 @@ namespace EduHome.App.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PositionId")
-                        .IsRequired()
+                    b.Property<int>("PositionId")
                         .HasColumnType("int");
 
                     b.Property<string>("Skype")
@@ -1089,12 +1060,6 @@ namespace EduHome.App.Migrations
 
             modelBuilder.Entity("EduHome.Core.Entities.Course", b =>
                 {
-                    b.HasOne("EduHome.Core.Entities.CourseAssests", "courseAssests")
-                        .WithMany("Courses")
-                        .HasForeignKey("CourseAssestsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("EduHome.Core.Entities.CourseLanguage", "CourseLanguage")
                         .WithMany("Courses")
                         .HasForeignKey("CourseLanguageId")
@@ -1102,8 +1067,6 @@ namespace EduHome.App.Migrations
                         .IsRequired();
 
                     b.Navigation("CourseLanguage");
-
-                    b.Navigation("courseAssests");
                 });
 
             modelBuilder.Entity("EduHome.Core.Entities.CourseCategory", b =>
@@ -1274,11 +1237,6 @@ namespace EduHome.App.Migrations
                     b.Navigation("courseCategories");
 
                     b.Navigation("courseTags");
-                });
-
-            modelBuilder.Entity("EduHome.Core.Entities.CourseAssests", b =>
-                {
-                    b.Navigation("Courses");
                 });
 
             modelBuilder.Entity("EduHome.Core.Entities.CourseLanguage", b =>

@@ -23,7 +23,6 @@ namespace EduHome.App.Controllers
 			if (id == null)
 			{
 				IEnumerable<Course> courses = await _context.Courses.Where(x => !x.IsDeleted)
-						.Include(x => x.courseAssests)
 						  .Include(x => x.courseCategories)
 						 .ThenInclude(x => x.Category)
 							   .Include(x => x.courseTags)
@@ -35,7 +34,6 @@ namespace EduHome.App.Controllers
 			else
 			{
 				IEnumerable<Course> courses = await _context.Courses.Where(x => !x.IsDeleted && x.courseCategories.Any(x => x.Category.Id == id))
-			 .Include(x => x.courseAssests)
 			   .Include(x => x.courseCategories)
 			  .ThenInclude(x => x.Category)
 					.Include(x => x.courseTags)
@@ -63,7 +61,6 @@ namespace EduHome.App.Controllers
 				 .ThenInclude(x => x.Course)
 				.ToListAsync();
 			Course? Course = await _context.Courses.Where(x => !x.IsDeleted)
-					.Include(x => x.courseAssests)
 					  .Include(x => x.courseCategories)
 					 .ThenInclude(x => x.Category)
 						   .Include(x => x.courseTags)
@@ -88,7 +85,6 @@ namespace EduHome.App.Controllers
 			ViewBag.TotalPage = (int)Math.Ceiling((decimal)TotalCount / 3);
 			ViewBag.CurrentPage = page;
 			List<Course> courses = await _context.Courses.Where(x => !x.IsDeleted && x.Name.Trim().ToLower().Contains(search.Trim().ToLower()))
-					.Include(x => x.courseAssests)
 					.Include(x => x.courseCategories)
 					.ThenInclude(x => x.Category)
 						.Include(x => x.courseTags)

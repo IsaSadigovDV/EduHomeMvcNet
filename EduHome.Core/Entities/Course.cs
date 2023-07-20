@@ -37,15 +37,14 @@ namespace EduHome.Core.Entities
         [Required]
         public double CourseFee { get; set; }
         [Required]
-        public int CourseAssestsId { get; set; }
-        public CourseAssests? courseAssests { get; set; }
+        public string Assesments { get; set; }
         public CourseLanguage? CourseLanguage { get; set; }
         public List<CourseTag>? courseTags { get; set; }
         public List<CourseCategory>? courseCategories { get; set; }
         [NotMapped]
-        public List<int> CategoryIds { get; set; }
+        public List<int>? CategoryIds { get; set; }
         [NotMapped]
-        public List<int> TagIds { get; set; }
+        public List<int>? TagIds { get; set; }
         public string? Image { get; set; }
         [NotMapped]
         public IFormFile? file { get; set; }

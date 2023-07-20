@@ -21,7 +21,6 @@ namespace EduHome.App.Context
         public DbSet<Tag> Tags  { get; set; }
         public DbSet<Notice> Notices  { get; set; }
         public DbSet<Course> Courses  { get; set; }
-        public DbSet<CourseAssests> courseAssests  { get; set; }
         public DbSet<CourseCategory> CourseCategories  { get; set; }
         public DbSet<CourseLanguage> CourseLanguages  { get; set; }
         public DbSet<CourseTag> CourseTags  { get; set; }

@@ -577,12 +577,12 @@
       "PackagePath": "staticwebassets\\fonts\\ionicons28b5.woff"
     },
     {
-      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg",
-      "PackagePath": "staticwebassets\\img\\about\\645972f0-218c-4e54-9cc1-bcfe617b980dnissan.jpg"
-    },
-    {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\about.png",
       "PackagePath": "staticwebassets\\img\\about\\about.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\bab6192a-8e97-429e-b4c0-3a2d01daa108welcome.png",
+      "PackagePath": "staticwebassets\\img\\about\\bab6192a-8e97-429e-b4c0-3a2d01daa108welcome.png"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\e3506bfd-125b-4191-a1aa-788c301faaf0nissan.jpg",
@@ -659,6 +659,10 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\contact\\contact3.png",
       "PackagePath": "staticwebassets\\img\\contact\\contact3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\course\\ad3313ff-b43a-47f9-8a85-bf626c46f6f8nissan.jpg",
+      "PackagePath": "staticwebassets\\img\\course\\ad3313ff-b43a-47f9-8a85-bf626c46f6f8nissan.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\course\\course-bg.jpg",
@@ -863,6 +867,10 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\slider3.jpg",
       "PackagePath": "staticwebassets\\img\\slider\\slider3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\teacher\\66034bf3-1e38-4715-9461-16603574fbb3nissan.jpg",
+      "PackagePath": "staticwebassets\\img\\teacher\\66034bf3-1e38-4715-9461-16603574fbb3nissan.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\teacher\\teacher-details.jpg",
