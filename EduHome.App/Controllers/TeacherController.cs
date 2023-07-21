@@ -1,5 +1,7 @@
 ﻿using EduHome.App.Context;
+using EduHome.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace EduHome.App.Controllers
 {
@@ -12,9 +14,15 @@ namespace EduHome.App.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            IEnumerable<Teacher> teachers = await _context.Teachers.Where(x => !x.IsDeleted)
+                .Include(x=>x.Socials)
+                .Include(x=>x.Position)
+                .ToListAsync();
+            return View(teachers);
         }
+
+
     }
 }

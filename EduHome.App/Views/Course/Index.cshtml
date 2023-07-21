@@ -18,7 +18,7 @@
 <!-- Banner Area End -->
 <!-- Course Start -->
 <div class="course-area pt-150 pb-150">
-    <div class="container">
+    <div class="container course_container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="course-title">
@@ -26,15 +26,56 @@
                 </div>
                 <div class="course-form">
                     <form id="search" action="#">
-                        <input type="search" placeholder="Search..." name="search" />
-                        <button type="submit">search</button>
+                        <input class="searchInput" type="search" placeholder="Search..." name="search" />
+                        <button class="searchButton" type="submit">search</button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+
             @await Html.PartialAsync("_Course",Model)
         </div>
     </div>
 </div>
 <!-- Course End -->
+
+<script>
+
+    const searchInput = document.querySelector(".searchInput");
+    const submit = document.querySelector(".searchButton");
+    const container = document.querySelector(".course_container")
+
+    searchInput.addEventListener("input", (e)=>{
+        e.preventDefault();
+
+        let href = `/course/search?search=${searchInput}`;
+        fetch(href)
+            .then(x=>x.json())
+            .then(x=>{
+                container.innerHTML = ""
+                x.forEach(item=>{
+                    console.log(x)
+                    let view = `
+                           <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="single-course mb-70">
+                            <div class="course-img">
+                                <a href="course-details.html"><img src="img/course/course1.jpg" alt="course">
+                                    <div class="course-hover">
+                                        <i class="fa fa-link"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-content">
+                                <h3><a href="course-details.html">${item.name}</a></h3>
+                                <p>${item.description}</p>
+                                <a class="default-btn" href="course-details.html">read more</a>
+                            </div>
+                        </div>
+                    </div>`;
+                    
+                    container.innerHTML+=view;
+                })
+            })
+
+</script>

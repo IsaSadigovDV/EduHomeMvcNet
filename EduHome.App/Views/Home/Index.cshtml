@@ -83,7 +83,9 @@
             </div>
         </div>
         <div class="row">
-            @await Html.PartialAsync("_Course",Model.Courses)
+
+            @await Html.PartialAsync("_Course",Model.Courses.Take(3))
+        </div>
         </div>
     </div>
 </div>
