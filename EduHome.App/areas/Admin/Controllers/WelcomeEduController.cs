@@ -59,7 +59,7 @@ namespace EduHome.App.Areas.Admin.Controllers
                 ModelState.AddModelError("Formfile", "File size can not be more than 2 mb");
             }
 
-            welcomeEdu.Image = welcomeEdu.FormFile.CreateImage(_env.WebRootPath, "/img/about");
+            welcomeEdu.Image = welcomeEdu.FormFile.CreateImage(_env.WebRootPath, "img/about");
             welcomeEdu.CreatedDate = DateTime.UtcNow.AddHours(4);
             await _context.AddAsync(welcomeEdu);
             await _context.SaveChangesAsync();
@@ -103,8 +103,8 @@ namespace EduHome.App.Areas.Admin.Controllers
                 {
                     ModelState.AddModelError("Formfile", "File size can not be more than 2 mb");
                 }
-                Helper.RemoveImage(_env.WebRootPath, "/img/about", updatedWelcomeEdu.Image);
-                updatedWelcomeEdu.Image = welcomeEdu.FormFile.CreateImage(_env.WebRootPath, "/img/about");
+                Helper.RemoveImage(_env.WebRootPath, "img/about", updatedWelcomeEdu.Image);
+                updatedWelcomeEdu.Image = welcomeEdu.FormFile.CreateImage(_env.WebRootPath, "img/about");
             }
 
             updatedWelcomeEdu.Title = welcomeEdu.Title;

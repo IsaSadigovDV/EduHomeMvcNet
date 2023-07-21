@@ -14,10 +14,7 @@ namespace EduHome.Core.Entities
         [Required]
 
         public string? Name { get; set; }
-        [Required]
-
         public int? TeacherId { get; set; }
-        [Required]
 
         public Teacher? Teacher { get; set; }
     }

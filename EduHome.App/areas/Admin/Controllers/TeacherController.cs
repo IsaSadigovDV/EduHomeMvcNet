@@ -93,7 +93,7 @@ namespace EduHome.App.Areas.Admin.Controllers
 			ViewBag.Degree = await _context.Degrees.Where(x => !x.IsDeleted).ToListAsync();
 			ViewBag.Hobbies = await _context.Hobbies.Where(x => !x.IsDeleted).ToListAsync();
 
-            Teacher? teacher = await _context.Teachers
+            Teacher? teacher = await _context.Teachers.AsNoTracking()
                 .Where(x => !x.IsDeleted && x.Id == id)
                 .Include(x => x.Degree)
                 .Include(x => x.Position)
@@ -117,7 +117,7 @@ namespace EduHome.App.Areas.Admin.Controllers
 			ViewBag.Degree = await _context.Degrees.Where(x => !x.IsDeleted).ToListAsync();
 			ViewBag.Hobbies = await _context.Hobbies.Where(x => !x.IsDeleted).ToListAsync();
 
-			Teacher? updatedteacher = await _context.Teachers
+			Teacher? updatedteacher = await _context.Teachers.AsNoTracking()
 				.Where(x => !x.IsDeleted && x.Id == id)
 				.Include(x => x.Degree)
 				.Include(x => x.Position)
@@ -162,7 +162,7 @@ namespace EduHome.App.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int id)
         {
-            Teacher? teacher = await _context.Teachers
+            Teacher? teacher = await _context.Teachers.AsNoTracking()
                 .Where(x => !x.IsDeleted && x.Id == id).FirstOrDefaultAsync();
             if(teacher == null)
             {

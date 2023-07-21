@@ -34,6 +34,7 @@ namespace EduHome.App.Areas.Admin.Controllers
             {
                 return View();
             }
+
             await _context.AddAsync(tag);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

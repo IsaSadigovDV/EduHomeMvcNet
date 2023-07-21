@@ -12,13 +12,12 @@ namespace EduHome.Core.Entities
     public class WelcomeEdu:BaseModel
     {
         [Required]
-        public string? Title { get; set; }
+        public string Title { get; set; }
         [Required]
-        public string? Description { get; set; }
+        public string Description { get; set; }
         [Required]
-        public string? Link { get; set; }
+        public string Link { get; set; }
 
-        [Required]
         public string? Image { get; set; }
 
         [NotMapped]

@@ -12,6 +12,6 @@ namespace EduHome.Core.Entities
         [Required]
         public string Name { get; set; }
         public List<CourseTag>? courseTags { get; set; }
-        public List<BlogTag> blogTags { get; set; }
+        public List<BlogTag>? blogTags { get; set; }
     }
 }

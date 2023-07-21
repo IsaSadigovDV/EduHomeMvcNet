@@ -610,7 +610,6 @@ namespace EduHome.App.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("SkillPercent")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int?>("TeacherId")
@@ -689,7 +688,6 @@ namespace EduHome.App.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("TeacherId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -828,7 +826,6 @@ namespace EduHome.App.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("HobbyId")
-                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
@@ -865,7 +862,6 @@ namespace EduHome.App.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -1122,9 +1118,7 @@ namespace EduHome.App.Migrations
                 {
                     b.HasOne("EduHome.Core.Entities.Teacher", "Teacher")
                         .WithMany("Socials")
-                        .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("TeacherId");
 
                     b.Navigation("Teacher");
                 });
@@ -1152,9 +1146,7 @@ namespace EduHome.App.Migrations
                 {
                     b.HasOne("EduHome.Core.Entities.Hobby", "Hobby")
                         .WithMany("TeacherHobbies")
-                        .HasForeignKey("HobbyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("HobbyId");
 
                     b.HasOne("EduHome.Core.Entities.Teacher", "Teacher")
                         .WithMany("TeacherHobbies")

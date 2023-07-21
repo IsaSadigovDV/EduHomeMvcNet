@@ -21,16 +21,8 @@
                     <th>@item.Position.Name</th>
                     <th>@item.Degree.Name</th>
                     <th><img style="width:100px;height:100px" src="~/img/teacher/@item.Image" /></th>
-                    <td>
-                        <a asp-controller="teacher" asp-action="update" asp-route-id="@item.Id">
-                            <i class="fas fa-edit text text-primary"></i>
-                        </a>
-                    </td>
-                    <td>
-                        <a onclick="if(!confirm('Are you sure?')){return false;}"
-                       asp-controller="teacher" asp-action="remove" asp-route-id="@item.Id"
-                       class=" delete-item"><i class="fas fa-trash text text-danger"></i></a>
-                    </td>
+                    <td><a asp-controller="teacher" asp-action="update" asp-route-id="@item.Id"><i class="fas fa-edit text text-primary"></i></a></td>
+                    <td><a onclick="if (!confirm('Delete selected item?')){return false;}" asp-controller="teacher" asp-action="Delete" asp-route-id="@item.Id" class=" delete-item"><i class="fas fa-trash text text-danger"></i></a></td>
                 </tr>
             }
         </tbody>
