@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yCehl0iNN8Ub8lRZZIZKJUWBE8bZyQ33b4MEPxy4nkE=",
+  "Hash": "14MnWiCrqxKzhzWk/kVWCa/X0JK1x21uKgb90MOA+Nc=",
   "Source": "EduHome.App",
   "BasePath": "_content/EduHome.App",
   "Mode": "Default",
@@ -2480,6 +2480,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\Material-Design-Iconic-Fontd1f1.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\6ba90082-a692-4d67-bc2c-49de72315f89about.png",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/about/6ba90082-a692-4d67-bc2c-49de72315f89about.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\about\\6ba90082-a692-4d67-bc2c-49de72315f89about.png"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\about\\a9bdda08-ad50-401e-af4c-2261c15e9596about.png",
