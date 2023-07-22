@@ -32,8 +32,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-
+        <div class="row">
             @await Html.PartialAsync("_Course",Model)
         </div>
     </div>
@@ -73,8 +72,8 @@
                             </div>
                         </div>
                     </div>`;
-                    
                     container.innerHTML+=view;
+                    
                 })
             })
 
