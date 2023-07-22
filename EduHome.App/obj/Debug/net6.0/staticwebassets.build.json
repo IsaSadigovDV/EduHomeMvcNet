@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YkC07cyJRw8pcjbTVeEcV/tUfoD0hq4zc1yxYq3wQCY=",
+  "Hash": "yCehl0iNN8Ub8lRZZIZKJUWBE8bZyQ33b4MEPxy4nkE=",
   "Source": "EduHome.App",
   "BasePath": "_content/EduHome.App",
   "Mode": "Default",
@@ -3874,6 +3874,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\slider\\cd3c0809-34ae-4ac3-8223-c88c814d9a1aslider2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\e10b4856-74fa-4e10-ac27-599042cbb1a9post1.jpg",
+      "SourceId": "EduHome.App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\",
+      "BasePath": "_content/EduHome.App",
+      "RelativePath": "img/slider/e10b4856-74fa-4e10-ac27-599042cbb1a9post1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\slider\\e10b4856-74fa-4e10-ac27-599042cbb1a9post1.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Asp.NetCore\\BackendFinal\\EduHome.App\\EduHome.App\\wwwroot\\img\\slider\\f10b79d8-a953-4d9d-95bf-52fad06c26e4cactus.jpg",
