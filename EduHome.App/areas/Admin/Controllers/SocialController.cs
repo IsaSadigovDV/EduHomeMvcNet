@@ -25,7 +25,9 @@ namespace EduHome.App.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create()
         {
-             return View();
+            ViewBag.Teachers = await _context.Teachers.Where(x => !x.IsDeleted).
+                                 ToListAsync();
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -36,6 +38,12 @@ namespace EduHome.App.Areas.Admin.Controllers
             {
                 return View();
             }
+            if(social.TeacherId == null)
+            {
+                ModelState.AddModelError("", "Teacher is not selected!");
+                return View(social);
+            }
+            social.CreatedDate = DateTime.Now;
             await _context.AddAsync(social);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -72,7 +80,6 @@ namespace EduHome.App.Areas.Admin.Controllers
             }
             social.Name = postsocial.Name;
             social.Link= postsocial.Link;
-            social.Teacher = postsocial.Teacher;
             social.CreatedDate = DateTime.Now;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
